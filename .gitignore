@@ -1,6 +1,10 @@
 node_modules
 .next
 out
+<<<<<<< HEAD
 .env*.local
+=======
+.env.local
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
 *.tsbuildinfo
 next-env.d.ts

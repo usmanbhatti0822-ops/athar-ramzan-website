@@ -20,7 +20,11 @@ export default function InsightsGrid() {
           {POST_CATEGORIES.map((c) => (
             <button
               key={c} aria-pressed={cat === c} onClick={() => setCat(c)}
+<<<<<<< HEAD
               className={clsx("relative whitespace-nowrap rounded-full border px-5 py-2 text-sm font-medium transition-colors", cat === c ? "border-transparent text-white" : "border-black/10 bg-card text-ink hover:border-brand-400")}
+=======
+              className={clsx("relative whitespace-nowrap rounded-full border px-5 py-2 text-sm font-medium transition-colors", cat === c ? "border-transparent text-white" : "border-white/10 bg-card text-ink hover:border-brand-400")}
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
             >
               {cat === c && <motion.span layoutId="cat-pill" className="absolute inset-0 rounded-full bg-gradient-to-r from-brand-700 to-brand-500" transition={{ type: "spring", stiffness: 400, damping: 32 }} />}
               <span className="relative">{c}</span>
@@ -37,8 +41,13 @@ export default function InsightsGrid() {
                 <div className="overflow-hidden rounded-3xl shadow-card">
                   <Cover index={a.i} label={a.category} className="aspect-[4/3] w-full transition duration-700 group-hover:scale-105" />
                 </div>
+<<<<<<< HEAD
                 <h2 className="mt-5 text-xl transition-colors group-hover:text-brand-700">{a.title}</h2>
                 <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700">
+=======
+                <h2 className="mt-5 text-xl transition-colors group-hover:text-brand-200">{a.title}</h2>
+                <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                   {a.href ? "Read article" : "Coming soon"} <ArrowUpRight size={15} className="transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </span>
               </Link>

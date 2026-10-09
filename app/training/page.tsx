@@ -34,7 +34,11 @@ export default function TrainingPage() {
                     <div className="flex flex-1 flex-col p-6">
                       <h2 className="text-xl">{p.title}</h2>
                       <p className="mt-3 flex-1 text-sub">{p.blurb}</p>
+<<<<<<< HEAD
                       <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700">
+=======
+                      <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                         View program <ArrowUpRight size={15} className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </span>
                     </div>
@@ -50,17 +54,29 @@ export default function TrainingPage() {
         <div className="container-x grid gap-6 lg:grid-cols-2">
           <Reveal>
             <div className="card h-full p-8 shadow-card">
+<<<<<<< HEAD
               <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-500/20 text-brand-700"><Users size={26} /></span>
               <h2 className="mt-6 text-2xl">Who it is for</h2>
               <p className="mt-3 text-sub">Learn. Apply. Grow. Banking is not learned only from books. Real professional growth comes from understanding how knowledge is applied in actual banking situations.</p>
               <ul className="mt-5 flex flex-wrap gap-2">
                 {TRAINING_FOR.map((t) => <li key={t} className="rounded-full bg-brand-500/10 px-4 py-1.5 text-sm font-medium text-brand-800">{t}</li>)}
+=======
+              <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-500/20 text-brand-300"><Users size={26} /></span>
+              <h2 className="mt-6 text-2xl">Who it is for</h2>
+              <p className="mt-3 text-sub">Learn. Apply. Grow. Banking is not learned only from books. Real professional growth comes from understanding how knowledge is applied in actual banking situations.</p>
+              <ul className="mt-5 flex flex-wrap gap-2">
+                {TRAINING_FOR.map((t) => <li key={t} className="rounded-full bg-brand-500/10 px-4 py-1.5 text-sm font-medium text-brand-200">{t}</li>)}
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
               </ul>
             </div>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="card h-full p-8 shadow-card">
+<<<<<<< HEAD
               <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-500/20 text-brand-700"><Building2 size={26} /></span>
+=======
+              <span className="grid h-14 w-14 place-items-center rounded-2xl bg-brand-500/20 text-brand-300"><Building2 size={26} /></span>
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
               <h2 className="mt-6 text-2xl">Corporate programs</h2>
               <p className="mt-4 text-sub">Custom programs for: {CORPORATE_FOR}</p>
             </div>
@@ -73,7 +89,11 @@ export default function TrainingPage() {
           <SectionHead badge="For business owners" title="Learn how banks look at your business" accent="banks look" lead="Sessions that help entrepreneurs and SMEs understand banking from the lender's side." />
           <ul className="mt-12 flex flex-wrap justify-center gap-3">
             {BUSINESS_TOPICS.map((t, i) => (
+<<<<<<< HEAD
               <Reveal as="li" key={t} delay={(i % 6) * 0.04} y={16} className="rounded-full border border-black/10 bg-card px-5 py-2.5 text-sm shadow-sm">{t}</Reveal>
+=======
+              <Reveal as="li" key={t} delay={(i % 6) * 0.04} y={16} className="rounded-full border border-white/10 bg-card px-5 py-2.5 text-sm shadow-sm">{t}</Reveal>
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
             ))}
           </ul>
           <Reveal className="mt-8 text-center">

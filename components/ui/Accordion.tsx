@@ -8,7 +8,11 @@ import clsx from "clsx";
 export default function Accordion({ items, defaultOpen = 0 }: { items: { q: string; a: string }[]; defaultOpen?: number | null }) {
   const [open, setOpen] = useState<number | null>(defaultOpen);
   return (
+<<<<<<< HEAD
     <ul className="divide-y divide-black/10">
+=======
+    <ul className="divide-y divide-white/10">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
       {items.map((it, i) => {
         const isOpen = open === i;
         return (
@@ -18,8 +22,13 @@ export default function Accordion({ items, defaultOpen = 0 }: { items: { q: stri
               aria-expanded={isOpen}
               className="flex w-full items-center justify-between gap-6 py-5 text-left"
             >
+<<<<<<< HEAD
               <span className={clsx("font-display text-lg transition-colors sm:text-xl", isOpen ? "text-brand-700" : "text-ink")}>{it.q}</span>
               <span className={clsx("grid h-9 w-9 shrink-0 place-items-center rounded-full transition-all duration-300", isOpen ? "rotate-45 bg-brand-500 text-white" : "bg-brand-500/10 text-brand-800")}>
+=======
+              <span className={clsx("font-display text-lg transition-colors sm:text-xl", isOpen ? "text-brand-300" : "text-ink")}>{it.q}</span>
+              <span className={clsx("grid h-9 w-9 shrink-0 place-items-center rounded-full transition-all duration-300", isOpen ? "rotate-45 bg-brand-500 text-white" : "bg-brand-500/10 text-brand-200")}>
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                 <Plus size={18} />
               </span>
             </button>

@@ -16,7 +16,11 @@ export default function Cover({ index = 0, label, className }: { index?: number;
         {paths.map((d, i) => <path key={i} d={d} fill="none" stroke="white" strokeOpacity={0.14 + i * 0.02} strokeWidth="1" />)}
       </svg>
       <div aria-hidden className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/15 blur-2xl" />
+<<<<<<< HEAD
       {label && <span className="absolute bottom-4 left-4 rounded-full bg-card/90 px-3 py-1 text-xs font-semibold text-brand-800">{label}</span>}
+=======
+      {label && <span className="absolute bottom-4 left-4 rounded-full bg-card/90 px-3 py-1 text-xs font-semibold text-brand-100">{label}</span>}
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
     </div>
   );
 }

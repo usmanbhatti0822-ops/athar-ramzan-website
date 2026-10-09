@@ -22,8 +22,13 @@ export default function InsightsPreview() {
                 <div className="overflow-hidden rounded-3xl">
                   <Cover index={i} label={a.category} className="aspect-[4/3] w-full transition duration-700 group-hover:scale-105" />
                 </div>
+<<<<<<< HEAD
                 <h3 className="mt-5 text-xl transition-colors group-hover:text-brand-700">{a.title}</h3>
                 <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700">
+=======
+                <h3 className="mt-5 text-xl transition-colors group-hover:text-brand-200">{a.title}</h3>
+                <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-300">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                   {a.href ? "Read article" : "Coming soon"} <ArrowUpRight size={15} className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </span>
               </Link>

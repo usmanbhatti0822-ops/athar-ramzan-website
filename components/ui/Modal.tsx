@@ -94,13 +94,21 @@ export default function Modal({ open, onClose, title, description, variant = "di
             variants={isDrawer ? drawerPanel : dialogPanel}
             role="dialog" aria-modal="true" aria-labelledby={`${id}-title`} tabIndex={-1} onKeyDown={trapTab}
             className={clsx(
+<<<<<<< HEAD
               "relative flex w-full flex-col border-black/10 bg-card outline-none shadow-2xl shadow-brand-950/15",
+=======
+              "relative flex w-full flex-col border-white/10 bg-card outline-none shadow-2xl shadow-brand-950/30",
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
               isDrawer
                 ? "h-[100dvh] max-w-md border-l sm:rounded-l-2xl"
                 : clsx("max-h-[90dvh] rounded-t-2xl border sm:rounded-2xl", width)
             )}
           >
+<<<<<<< HEAD
             <header className="flex items-start justify-between gap-4 border-b border-black/10 px-5 py-5 sm:px-7">
+=======
+            <header className="flex items-start justify-between gap-4 border-b border-white/10 px-5 py-5 sm:px-7">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
               <div>
                 <h2 id={`${id}-title`} className="text-2xl leading-tight sm:text-[1.75rem]">{title}</h2>
                 {description && <p className="mt-1.5 max-w-[52ch] text-sm text-sub">{description}</p>}

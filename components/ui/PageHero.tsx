@@ -11,11 +11,19 @@ export default function PageHero({
       <div className="container-x">
         <Reveal y={10}>
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-sub">
+<<<<<<< HEAD
             <Link href="/" className="hover:text-brand-700">Home</Link>
             {crumbs.map((c) => (
               <span key={c.label} className="flex items-center gap-2">
                 <span aria-hidden>/</span>
                 {c.href ? <Link href={c.href} className="hover:text-brand-700">{c.label}</Link> : <span className="font-semibold text-brand-700">{c.label}</span>}
+=======
+            <Link href="/" className="hover:text-brand-200">Home</Link>
+            {crumbs.map((c) => (
+              <span key={c.label} className="flex items-center gap-2">
+                <span aria-hidden>/</span>
+                {c.href ? <Link href={c.href} className="hover:text-brand-200">{c.label}</Link> : <span className="font-semibold text-brand-300">{c.label}</span>}
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
               </span>
             ))}
           </nav>

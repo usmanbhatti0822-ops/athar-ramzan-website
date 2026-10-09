@@ -32,7 +32,11 @@ export default function ContactPage() {
                     <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-brand-600 to-brand-400 text-white"><Icon size={24} /></span>
                     <div className="min-w-0">
                       <p className="text-sm text-sub">{label}</p>
+<<<<<<< HEAD
                       {href ? <a href={href} className="break-all font-display text-lg hover:text-brand-700">{value}</a> : <p className="font-display text-lg">{value}</p>}
+=======
+                      {href ? <a href={href} className="break-all font-display text-lg hover:text-brand-200">{value}</a> : <p className="font-display text-lg">{value}</p>}
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                     </div>
                   </div>
                 </Tilt>
@@ -41,7 +45,11 @@ export default function ContactPage() {
           </div>
 
           <Reveal delay={0.1}>
+<<<<<<< HEAD
             <div className="relative isolate overflow-hidden rounded-[2rem] border border-black/10 bg-card p-6 shadow-soft sm:p-10">
+=======
+            <div className="relative isolate overflow-hidden rounded-[2rem] border border-white/10 bg-card p-6 shadow-soft sm:p-10">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
               <h2 className="text-3xl">Send an enquiry</h2>
               <p className="mb-7 mt-2 text-sub">Tell me what you need. I will review it and get back to you.</p>
               <EnquiryForm />

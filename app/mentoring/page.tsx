@@ -25,7 +25,11 @@ export default function MentoringPage() {
               <Reveal key={t} delay={(i % 3) * 0.07}>
                 <Tilt className="h-full">
                   <div className="card flex h-full items-center gap-5 p-6 shadow-card transition-shadow hover:shadow-soft">
+<<<<<<< HEAD
                     <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-brand-500/20 text-brand-700"><Compass size={22} /></span>
+=======
+                    <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-brand-500/20 text-brand-300"><Compass size={22} /></span>
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                     <h2 className="text-lg">{t}</h2>
                   </div>
                 </Tilt>

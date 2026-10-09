@@ -20,10 +20,17 @@ export default function Intro() {
           className="mt-6 max-w-[30ch] font-display text-[clamp(1.9rem,4.4vw,3.6rem)] font-semibold leading-[1.15] tracking-tight sm:max-w-[34ch]"
           text="Complex banking made simple. With two decades across credit, trade finance and branch leadership, Athar helps bankers and businesses make better decisions with practical, usable knowledge."
         />
+<<<<<<< HEAD
         <dl className="mt-16 grid grid-cols-2 gap-y-10 border-t border-black/10 pt-10 lg:grid-cols-4">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.08}>
               <dt className="font-display text-5xl font-semibold text-brand-700 sm:text-6xl">
+=======
+        <dl className="mt-16 grid grid-cols-2 gap-y-10 border-t border-white/10 pt-10 lg:grid-cols-4">
+          {STATS.map((s, i) => (
+            <Reveal key={s.label} delay={i * 0.08}>
+              <dt className="font-display text-5xl font-semibold text-brand-200 sm:text-6xl">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                 <CountUp to={s.to} suffix={s.suffix} />
               </dt>
               <dd className="mt-2 max-w-[18ch] text-sm text-sub">{s.label}</dd>

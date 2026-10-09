@@ -22,12 +22,20 @@ export default function CredentialsPage() {
             {CREDENTIALS.map(([title, org, year], i) => (
               <Reveal key={title} delay={(i % 2) * 0.08}>
                 <div className="card group flex h-full items-start gap-5 p-7 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft">
+<<<<<<< HEAD
                   <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-brand-500/20 text-brand-700 transition group-hover:bg-brand-500 group-hover:text-white"><GraduationCap size={26} /></span>
+=======
+                  <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-brand-500/20 text-brand-300 transition group-hover:bg-brand-500 group-hover:text-white"><GraduationCap size={26} /></span>
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                   <div className="flex-1">
                     <h2 className="text-xl">{title}</h2>
                     <p className="mt-2 text-sub">{org}</p>
                   </div>
+<<<<<<< HEAD
                   <span className="rounded-full bg-brand-500/10 px-3 py-1 text-sm font-semibold text-brand-800">{year}</span>
+=======
+                  <span className="rounded-full bg-brand-500/10 px-3 py-1 text-sm font-semibold text-brand-200">{year}</span>
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                 </div>
               </Reveal>
             ))}
@@ -37,7 +45,11 @@ export default function CredentialsPage() {
             <SectionHead badge="Professional development" title="Courses completed along the way" accent="Courses completed" />
             <ul className="mt-12 flex flex-wrap justify-center gap-3">
               {PD_TOPICS.map((t, i) => (
+<<<<<<< HEAD
                 <Reveal as="li" key={t} delay={(i % 6) * 0.04} y={16} className="flex items-center gap-2 rounded-full border border-black/10 bg-card px-5 py-2.5 text-sm shadow-sm transition hover:-translate-y-0.5 hover:border-brand-400">
+=======
+                <Reveal as="li" key={t} delay={(i % 6) * 0.04} y={16} className="flex items-center gap-2 rounded-full border border-white/10 bg-card px-5 py-2.5 text-sm shadow-sm transition hover:-translate-y-0.5 hover:border-brand-400">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                     <Award size={15} className="text-brand-500" />{t}
                   </Reveal>
               ))}

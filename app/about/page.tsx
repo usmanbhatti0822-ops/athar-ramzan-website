@@ -27,7 +27,11 @@ export default function AboutPage() {
               </div>
             </Tilt>
             <ul className="mx-auto mt-8 flex max-w-[420px] flex-wrap gap-2">
+<<<<<<< HEAD
               {SITE.roles.map((r) => <li key={r} className="rounded-full bg-brand-500/10 px-4 py-1.5 text-sm font-medium text-brand-800">{r}</li>)}
+=======
+              {SITE.roles.map((r) => <li key={r} className="rounded-full bg-brand-500/10 px-4 py-1.5 text-sm font-medium text-brand-200">{r}</li>)}
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
             </ul>
           </Reveal>
 

@@ -10,7 +10,11 @@ type Variant = "solid" | "light" | "outline";
 const body: Record<Variant, string> = {
   solid: "bg-brand-600 text-white shadow-soft hover:bg-brand-500",
   light: "bg-white text-brand-900 shadow-card hover:bg-brand-100",
+<<<<<<< HEAD
   outline: "border border-brand-400/40 bg-brand-50 text-brand-800 backdrop-blur hover:bg-brand-100",
+=======
+  outline: "border border-brand-400/40 bg-white/5 text-brand-100 backdrop-blur hover:bg-white/10",
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
 };
 const dot: Record<Variant, string> = {
   solid: "bg-brand-400 text-brand-950",

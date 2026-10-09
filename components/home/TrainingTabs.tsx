@@ -53,7 +53,11 @@ export default function TrainingTabs() {
                   <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-brand-950/70 via-transparent to-transparent p-7 text-white sm:p-9">
                     <h3 className="text-2xl !text-white sm:text-3xl">{current.title}</h3>
                     <p className="mt-3 max-w-[40ch] text-white/85">{current.blurb}</p>
+<<<<<<< HEAD
                     <Link href={`/training/${current.slug}`} className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-brand-800 transition hover:bg-brand-500/20">
+=======
+                    <Link href={`/training/${current.slug}`} className="mt-5 inline-flex w-fit items-center gap-2 rounded-full bg-card px-5 py-2.5 text-sm font-semibold text-brand-100 transition hover:bg-brand-500/20">
+>>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                       View program <ArrowUpRight size={16} />
                     </Link>
                   </div>
