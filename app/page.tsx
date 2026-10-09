@@ -17,11 +17,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-<<<<<<< HEAD
       <div className="border-y border-black/10 bg-card py-6"><Marquee items={TOPICS} /></div>
-=======
-      <div className="border-y border-white/10 bg-card py-6"><Marquee items={TOPICS} /></div>
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
       <Intro />
       <ExpertisePreview />
       <Highlights />

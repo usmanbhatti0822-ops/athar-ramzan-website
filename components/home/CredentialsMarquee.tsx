@@ -19,19 +19,11 @@ export default function CredentialsMarquee() {
           <div className="flex w-max animate-marquee gap-5 py-4 [animation-duration:55s] group-hover:[animation-play-state:paused]">
             {row.map(([title, org, year], i) => (
               <div key={i} className="card flex w-[320px] shrink-0 items-start gap-4 p-6 shadow-card">
-<<<<<<< HEAD
                 <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-brand-500/20 text-brand-700"><GraduationCap size={22} /></span>
                 <div>
                   <p className="font-display text-lg leading-snug">{title}</p>
                   <p className="mt-1 text-sm text-sub">{org}</p>
                   <p className="mt-2 text-sm font-semibold text-brand-700">{year}</p>
-=======
-                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-brand-500/20 text-brand-300"><GraduationCap size={22} /></span>
-                <div>
-                  <p className="font-display text-lg leading-snug">{title}</p>
-                  <p className="mt-1 text-sm text-sub">{org}</p>
-                  <p className="mt-2 text-sm font-semibold text-brand-300">{year}</p>
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                 </div>
               </div>
             ))}

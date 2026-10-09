@@ -34,15 +34,9 @@ export default function TestimonialsPage() {
                 <Reveal key={t.name + i} delay={(i % 3) * 0.08}>
                   <Tilt className="h-full">
                     <figure className="card flex h-full flex-col p-7 shadow-card">
-<<<<<<< HEAD
                       <Quote size={30} className="text-brand-700" />
                       <blockquote className="mt-4 flex-1 text-lg">{t.quote}</blockquote>
                       <figcaption className="mt-6 border-t border-black/10 pt-4">
-=======
-                      <Quote size={30} className="text-brand-400" />
-                      <blockquote className="mt-4 flex-1 text-lg">{t.quote}</blockquote>
-                      <figcaption className="mt-6 border-t border-white/10 pt-4">
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                         <p className="font-display text-lg">{t.name}</p>
                         <p className="text-sm text-sub">{t.role}</p>
                       </figcaption>

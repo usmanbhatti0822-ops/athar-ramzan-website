@@ -67,11 +67,7 @@ export default function Navbar() {
         <div
           className={clsx(
             "mx-auto flex max-w-[1240px] items-center justify-between rounded-full border bg-card/75 py-2 pl-4 pr-2 backdrop-blur-xl transition-all duration-500",
-<<<<<<< HEAD
             scrolled ? "border-black/10 shadow-card" : "border-black/10 shadow-none"
-=======
-            scrolled ? "border-white/10 shadow-card" : "border-white/10 shadow-none"
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
           )}
         >
           <Link href="/" className="flex items-center gap-3">
@@ -81,11 +77,7 @@ export default function Navbar() {
 
           <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
             {MAIN_NAV.map((n) => (
-<<<<<<< HEAD
               <Link key={n.href} href={n.href} className={clsx("relative rounded-full px-4 py-2 text-sm font-medium transition-colors", isActive(n.href) ? "text-brand-800" : "text-sub hover:text-ink")}>
-=======
-              <Link key={n.href} href={n.href} className={clsx("relative rounded-full px-4 py-2 text-sm font-medium transition-colors", isActive(n.href) ? "text-brand-100" : "text-sub hover:text-ink")}>
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                 {isActive(n.href) && <motion.span layoutId="nav-pill" className="absolute inset-0 -z-0 rounded-full bg-brand-500/20" transition={{ type: "spring", stiffness: 380, damping: 32 }} />}
                 <span className="relative">{n.label}</span>
               </Link>
@@ -96,11 +88,7 @@ export default function Navbar() {
             <Button onClick={() => openEnquiry()} className="hidden sm:inline-flex">Book a session</Button>
             <button
               onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}
-<<<<<<< HEAD
               className="grid h-11 w-11 place-items-center rounded-full bg-brand-500/10 text-brand-800 transition hover:bg-brand-500/30"
-=======
-              className="grid h-11 w-11 place-items-center rounded-full bg-brand-500/10 text-brand-100 transition hover:bg-brand-500/30"
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
             >
               <Menu size={20} />
             </button>
@@ -116,11 +104,7 @@ export default function Navbar() {
             initial={{ clipPath: "circle(0% at calc(100% - 44px) 44px)" }}
             animate={{ clipPath: "circle(150% at calc(100% - 44px) 44px)", transition: { duration: 0.8, ease } }}
             exit={{ clipPath: "circle(0% at calc(100% - 44px) 44px)", transition: { duration: 0.55, ease } }}
-<<<<<<< HEAD
             className="fixed inset-0 z-[70] overflow-y-auto bg-gradient-to-br from-surface via-mist to-brand-50"
-=======
-            className="fixed inset-0 z-[70] overflow-y-auto bg-gradient-to-br from-surface via-mist to-brand-900"
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
           >
             <div className="container-x relative flex min-h-full flex-col py-6">
               <div className="flex items-center justify-between">
@@ -134,13 +118,8 @@ export default function Navbar() {
                 <motion.ul initial="hidden" animate="show" variants={{ hidden: {}, show: { transition: { staggerChildren: 0.05, delayChildren: 0.25 } } }} className="grid gap-x-10 sm:grid-cols-2">
                   {ALL_PAGES.map((p) => (
                     <motion.li key={p.href} variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, ease } } }}>
-<<<<<<< HEAD
                       <Link href={p.href} onClick={() => setOpen(false)} className="group flex items-baseline justify-between border-b border-black/10 py-3.5">
                         <span className={clsx("font-display text-3xl transition-all duration-300 group-hover:translate-x-2 group-hover:text-brand-700 sm:text-4xl", isActive(p.href) && "text-brand-700")}>{p.label}</span>
-=======
-                      <Link href={p.href} onClick={() => setOpen(false)} className="group flex items-baseline justify-between border-b border-white/10 py-3.5">
-                        <span className={clsx("font-display text-3xl transition-all duration-300 group-hover:translate-x-2 group-hover:text-brand-300 sm:text-4xl", isActive(p.href) && "text-brand-300")}>{p.label}</span>
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                         <span className="text-sm text-sub">{p.note}</span>
                       </Link>
                     </motion.li>
@@ -151,13 +130,8 @@ export default function Navbar() {
                   <p className="font-display text-xl">Ready to talk?</p>
                   <p className="mt-2 text-sm text-sub">Training, mentoring or a talk for your team.</p>
                   <div className="mt-5 space-y-2 text-sm">
-<<<<<<< HEAD
                     <a href={SITE.phoneHref} className="flex items-center gap-2 hover:text-brand-700"><Phone size={15} />{SITE.phone}</a>
                     <a href={`mailto:${SITE.email}`} className="flex items-center gap-2 break-all hover:text-brand-700"><Mail size={15} />{SITE.email}</a>
-=======
-                    <a href={SITE.phoneHref} className="flex items-center gap-2 hover:text-brand-200"><Phone size={15} />{SITE.phone}</a>
-                    <a href={`mailto:${SITE.email}`} className="flex items-center gap-2 break-all hover:text-brand-200"><Mail size={15} />{SITE.email}</a>
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                   </div>
                   <Button onClick={() => { setOpen(false); setTimeout(() => openEnquiry(), 350); }} className="mt-6">Send an enquiry</Button>
                 </motion.div>

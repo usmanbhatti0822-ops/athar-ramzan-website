@@ -12,11 +12,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-gradient-to-b from-mist via-surface to-surface">
-<<<<<<< HEAD
       <div className="container-x grid items-start gap-10 pb-16 pt-6 sm:pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:pb-24 lg:pt-10">
-=======
-      <div className="container-x grid items-center gap-14 pb-20 pt-12 sm:pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:pb-28 lg:pt-20">
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
         <div>
           <motion.span initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease }} className="badge">
             <span className="h-2 w-2 rounded-full bg-brand-400" />
@@ -27,17 +23,10 @@ export default function Hero() {
             as="h1" instant delay={0.1}
             text="Turning banking experience into practical knowledge"
             accent="practical knowledge"
-<<<<<<< HEAD
             className="mt-5 text-[clamp(2.4rem,5.6vw,4.5rem)]"
           />
 
           <motion.p initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4, ease }} className="mt-5 max-w-[52ch] text-base leading-7 text-sub sm:text-lg">
-=======
-            className="mt-6 text-[clamp(2.5rem,6.2vw,5rem)]"
-          />
-
-          <motion.p initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4, ease }} className="mt-6 max-w-[52ch] text-lg text-sub">
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
             Athar Ramzan brings more than 20 years of corporate banking, credit and trade finance experience to training, mentoring and speaking for banks, businesses and young professionals.
           </motion.p>
 
@@ -52,11 +41,7 @@ export default function Hero() {
               { n: 5, s: "", l: "SBP audits concluded without penalty" },
             ].map((x) => (
               <div key={x.l}>
-<<<<<<< HEAD
                 <dt className="font-display text-4xl font-semibold text-brand-700"><CountUp to={x.n} suffix={x.s} /></dt>
-=======
-                <dt className="font-display text-4xl font-semibold text-brand-300"><CountUp to={x.n} suffix={x.s} /></dt>
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                 <dd className="mt-1 max-w-[20ch] text-sm text-sub">{x.l}</dd>
               </div>
             ))}
@@ -64,16 +49,12 @@ export default function Hero() {
         </div>
 
         {/* Portrait: static, no floating badges */}
-<<<<<<< HEAD
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1, y: [0, -6, 0], rotate: [0, 0.5, 0] }}
           transition={{ duration: 0.7, delay: 0.15, ease, y: { duration: 4.5, repeat: Infinity, ease: "easeInOut" }, rotate: { duration: 6, repeat: Infinity, ease: "easeInOut" } }}
           className="relative mx-auto mt-6 w-full max-w-[420px] lg:mt-14"
         >
-=======
-        <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.15, ease }} className="relative mx-auto w-full max-w-[460px]">
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
           <div aria-hidden className="absolute -inset-4 -z-10 rotate-6 rounded-[2.5rem] bg-gradient-to-br from-brand-600 to-brand-900" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-brand-900 shadow-soft">
             <Image src="/athar-ramzan.png" alt="Athar Ramzan" fill priority sizes="(min-width:1024px) 460px, 90vw" className="object-cover" style={{ objectPosition: "50% 10%" }} />

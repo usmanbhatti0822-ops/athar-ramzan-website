@@ -55,11 +55,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               <ul className="mt-4 space-y-2">
                 {related.map((r) => (
                   <li key={r.slug}>
-<<<<<<< HEAD
                     <Link href={`/insights/${r.slug}`} className="group flex items-center justify-between gap-3 rounded-2xl border border-black/10 px-4 py-3 text-sm transition hover:border-brand-400 hover:bg-brand-500/20">
-=======
-                    <Link href={`/insights/${r.slug}`} className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 px-4 py-3 text-sm transition hover:border-brand-400 hover:bg-brand-500/20">
->>>>>>> 801b4d79c37d6d0bc384fe628275771cfd8fce03
                       <span>{r.title}</span>
                       <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand-500 text-white transition group-hover:rotate-45"><ArrowUpRight size={14} /></span>
                     </Link>
